@@ -1,3 +1,11 @@
+//Marissa Estramonte and Quillan Gee
+//2405291, 2404244 
+//estramonte@chapman.edu, qgee@chapman.edu 
+//245-01
+//Final Project: Whack-a-mole
+
+//Mole takes care of the behavior of each individual Mole.
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -45,7 +53,8 @@ public class Mole : MonoBehaviour
     isMoleOut = false;
     transform.localPosition = start;
   }
-
+    
+    //Controls what happens when you whack-a-mole
     public void OnMouseDown()
     {
         if (isMoleOut)
@@ -54,7 +63,8 @@ public class Mole : MonoBehaviour
             isMoleOut = false;
         }
     }
-
+    
+    //Controls the position of the mole once being hit and puts it back into the starting position immediately.
     public void Sink()
     {
         transform.localPosition = Vector2.Lerp(new Vector2(0f, -0.75f), new Vector2(0f, 1f), 0.25f);
