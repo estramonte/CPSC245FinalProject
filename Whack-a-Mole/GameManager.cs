@@ -1,3 +1,11 @@
+//Marissa Estramonte and Quillan Gee
+//2405291, 2404244 
+//estramonte@chapman.edu, qgee@chapman.edu 
+//245-01
+//Final Project: Whack-a-mole
+
+//Game Manager managed all the behind the scenes canvas changing and state changing.
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
