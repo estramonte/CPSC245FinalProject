@@ -1,3 +1,11 @@
+//Marissa Estramonte and Quillan Gee
+//2405291, 2404244 
+//estramonte@chapman.edu, qgee@chapman.edu 
+//245-01
+//Final Project: Whack-a-mole
+
+//GamePlaying managed all the overall mole behavior and some game behavior.
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
