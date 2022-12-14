@@ -34,7 +34,8 @@ public class GameManager : MonoBehaviour
         stateReset = new StateReset(this);
         stateQuit = new StateQuit(this);
     }
-
+    
+    //Shows Menu Screen and starts the menu music
     void Start()
     {
         sounds.PlayMenuMusic();
@@ -43,7 +44,8 @@ public class GameManager : MonoBehaviour
         countdown.gameObject.SetActive(false);
         resultScreen.gameObject.SetActive(false);
     }
-
+    
+    //Shows the countdown canvas and starts countdown timer
     public void StartBeginningOfGame()
     {
         sounds.StopMusic();
@@ -51,7 +53,8 @@ public class GameManager : MonoBehaviour
         countdown.gameObject.SetActive(true);
         StartCoroutine(Countdown(3));
     }
-
+    
+    //Shows the game itself and start the music, in game timer, and the game.
     public void StartGame()
     {
         sounds.PlayInGameMusic();
@@ -82,7 +85,8 @@ public class GameManager : MonoBehaviour
         countdown.gameObject.SetActive(false);
         StartGame();
     }
-
+    
+    //Shows results screen with total moles the popped up and how many whacked and start results music.
     public void StartResults()
     {
         sounds.StopMusic();
@@ -91,12 +95,13 @@ public class GameManager : MonoBehaviour
         resultScreen.gameObject.SetActive(true);
         ui.ShowEndScore();
     }
-
+    
+    //Quits Application
     public void Quit()
     {
         Application.Quit();
     }
-
+    
     public void NewState(GameStates newState)
     {
         if (null != currState)
