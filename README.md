@@ -30,3 +30,5 @@ MenuMusic.mp3
 ResultPageMusic.mp3
 
 1. The game build won't load any sprites in.
+
+1. https://www.youtube.com/watch?v=FkNdXYG3aaA&ab_channel=WhatIfTutorials - used to teach us how to animate the moles.
